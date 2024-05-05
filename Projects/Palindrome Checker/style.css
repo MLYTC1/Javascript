@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 300px;
+    
+}
+div{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+#butt{
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+#butt:hover{
+    background-color: green;
+    color: aliceblue;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#button{
+    width:190px;
+    height: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+input{
+    border-radius: 5px;
+    border: none;
+    background-color: aliceblue;
+    text-align: center;
+}
