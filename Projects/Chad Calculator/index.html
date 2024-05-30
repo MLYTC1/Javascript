@@ -1,0 +1,150 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+    
+    <section class="silver-background">
+        
+        <!-- <div class="icons">
+            <svg class="wifi" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1.33309 8.07433C0.92156 8.44266 0.886539 9.07485 1.25487 9.48638C1.62319 9.89791 2.25539 9.93293 2.66691 9.5646L1.33309 8.07433ZM21.3331 9.5646C21.7446 9.93293 22.3768 9.89791 22.7451 9.48638C23.1135 9.07485 23.0784 8.44266 22.6669 8.07433L21.3331 9.5646ZM12 19C11.4477 19 11 19.4477 11 20C11 20.5523 11.4477 21 12 21V19ZM12.01 21C12.5623 21 13.01 20.5523 13.01 20C13.01 19.4477 12.5623 19 12.01 19V21ZM14.6905 17.04C15.099 17.4116 15.7315 17.3817 16.1031 16.9732C16.4748 16.5646 16.4448 15.9322 16.0363 15.5605L14.6905 17.04ZM18.0539 13.3403C18.4624 13.7119 19.0949 13.682 19.4665 13.2734C19.8381 12.8649 19.8082 12.2324 19.3997 11.8608L18.0539 13.3403ZM7.96372 15.5605C7.55517 15.9322 7.52524 16.5646 7.89687 16.9732C8.2685 17.3817 8.90095 17.4116 9.3095 17.04L7.96372 15.5605ZM4.60034 11.8608C4.19179 12.2324 4.16185 12.8649 4.53348 13.2734C4.90511 13.682 5.53756 13.7119 5.94611 13.3403L4.60034 11.8608ZM2.66691 9.5646C5.14444 7.34716 8.41371 6 12 6V4C7.90275 4 4.16312 5.54138 1.33309 8.07433L2.66691 9.5646ZM12 6C15.5863 6 18.8556 7.34716 21.3331 9.5646L22.6669 8.07433C19.8369 5.54138 16.0972 4 12 4V6ZM12 21H12.01V19H12V21ZM12 16C13.0367 16 13.9793 16.3931 14.6905 17.04L16.0363 15.5605C14.9713 14.5918 13.5536 14 12 14V16ZM12 11C14.3319 11 16.4546 11.8855 18.0539 13.3403L19.3997 11.8608C17.4466 10.0842 14.8487 9 12 9V11ZM9.3095 17.04C10.0207 16.3931 10.9633 16 12 16V14C10.4464 14 9.02872 14.5918 7.96372 15.5605L9.3095 17.04ZM5.94611 13.3403C7.54544 11.8855 9.66815 11 12 11V9C9.15127 9 6.55344 10.0842 4.60034 11.8608L5.94611 13.3403Z" fill="#fff"></path> </g></svg>
+            <svg class="battery" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 6.75L3 7.5V16.5L3.75 17.25H18.75L19.5 16.5V14.25H21V9.75H19.5V7.5L18.75 6.75H3.75ZM18 9.75V8.25H4.5V15.75H18V14.25V9.75Z" fill="#fff"></path> </g></svg>
+            <svg class="connection" viewBox="0 0 76 76" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" enable-background="new 0 0 76.00 76.00" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 41,35L 41,57L 35,57L 35,35L 41,35 Z M 33,44L 33,57L 27,57L 27,44L 33,44 Z M 19,57L 19,51L 25,51L 25,57L 19,57 Z M 57,19L 57,57L 51,57L 51,19L 57,19 Z M 49,27L 49,57L 43,57L 43,27L 49,27 Z "></path> </g></svg>
+        </div> -->
+        <div class="interface">
+                
+            <!-- <div id="clock-div"><input type="text"id="clock"></div> -->
+            <div id="calculator">
+                <input id="display" readonly>
+                input type="text"id="clock">
+           
+                <div class="icons">
+                    <div id="clock-div"><input onclick="updateClock()" type="text"id="clock"></div>
+                    <svg class="wifi" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1.33309 8.07433C0.92156 8.44266 0.886539 9.07485 1.25487 9.48638C1.62319 9.89791 2.25539 9.93293 2.66691 9.5646L1.33309 8.07433ZM21.3331 9.5646C21.7446 9.93293 22.3768 9.89791 22.7451 9.48638C23.1135 9.07485 23.0784 8.44266 22.6669 8.07433L21.3331 9.5646ZM12 19C11.4477 19 11 19.4477 11 20C11 20.5523 11.4477 21 12 21V19ZM12.01 21C12.5623 21 13.01 20.5523 13.01 20C13.01 19.4477 12.5623 19 12.01 19V21ZM14.6905 17.04C15.099 17.4116 15.7315 17.3817 16.1031 16.9732C16.4748 16.5646 16.4448 15.9322 16.0363 15.5605L14.6905 17.04ZM18.0539 13.3403C18.4624 13.7119 19.0949 13.682 19.4665 13.2734C19.8381 12.8649 19.8082 12.2324 19.3997 11.8608L18.0539 13.3403ZM7.96372 15.5605C7.55517 15.9322 7.52524 16.5646 7.89687 16.9732C8.2685 17.3817 8.90095 17.4116 9.3095 17.04L7.96372 15.5605ZM4.60034 11.8608C4.19179 12.2324 4.16185 12.8649 4.53348 13.2734C4.90511 13.682 5.53756 13.7119 5.94611 13.3403L4.60034 11.8608ZM2.66691 9.5646C5.14444 7.34716 8.41371 6 12 6V4C7.90275 4 4.16312 5.54138 1.33309 8.07433L2.66691 9.5646ZM12 6C15.5863 6 18.8556 7.34716 21.3331 9.5646L22.6669 8.07433C19.8369 5.54138 16.0972 4 12 4V6ZM12 21H12.01V19H12V21ZM12 16C13.0367 16 13.9793 16.3931 14.6905 17.04L16.0363 15.5605C14.9713 14.5918 13.5536 14 12 14V16ZM12 11C14.3319 11 16.4546 11.8855 18.0539 13.3403L19.3997 11.8608C17.4466 10.0842 14.8487 9 12 9V11ZM9.3095 17.04C10.0207 16.3931 10.9633 16 12 16V14C10.4464 14 9.02872 14.5918 7.96372 15.5605L9.3095 17.04ZM5.94611 13.3403C7.54544 11.8855 9.66815 11 12 11V9C9.15127 9 6.55344 10.0842 4.60034 11.8608L5.94611 13.3403Z" fill="#fff"></path> </g></svg>
+                    <svg class="battery" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 6.75L3 7.5V16.5L3.75 17.25H18.75L19.5 16.5V14.25H21V9.75H19.5V7.5L18.75 6.75H3.75ZM18 9.75V8.25H4.5V15.75H18V14.25V9.75Z" fill="#fff"></path> </g></svg>
+                    <svg class="connection" viewBox="0 0 76 76" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" enable-background="new 0 0 76.00 76.00" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 41,35L 41,57L 35,57L 35,35L 41,35 Z M 33,44L 33,57L 27,57L 27,44L 33,44 Z M 19,57L 19,51L 25,51L 25,57L 19,57 Z M 57,19L 57,57L 51,57L 51,19L 57,19 Z M 49,27L 49,57L 43,57L 43,27L 49,27 Z "></path> </g></svg>
+                </div>
+                
+           
+                <div id="keys">
+                    <button  class="operator-btn" onclick="addToDisplay('+')" >+</button>
+                    <button  class="numbers" onclick="addToDisplay('7')">7</button>
+                    <button  class="numbers" onclick="addToDisplay('8')">8</button>
+                    <button  class="numbers" onclick="addToDisplay('9')">9</button>
+                    <button  class="operator-btn" onclick="addToDisplay('-')" >-</button>
+                    <button  class="numbers" onclick="addToDisplay('4')">4</button>
+                    <button  class="numbers" onclick="addToDisplay('5')">5</button>
+                    <button  class="numbers" onclick="addToDisplay('6')">6</button>
+                    <button  class="operator-btn" onclick="addToDisplay('*')" >*</button>
+                    <button  class="numbers" onclick="addToDisplay('1')">1</button>
+                    <button  class="numbers" onclick="addToDisplay('2')">2</button>
+                    <button  class="numbers" onclick="addToDisplay('3')">3</button>
+                    <button  class="operator-btn"  onclick="addToDisplay('/')">/</button>
+                    <button  class="numbers" onclick="addToDisplay('0')">0</button>
+                    <button  onclick="addToDisplay('.')">.</button>
+                    <button id="equal" onclick="calculate()">=</button>
+                    <button  class="operator-btn" onclick="clearDisplay()">C</button>
+                    <input  readonly id="end-phone">
+                </div>
+                
+                <!-- <input type="text" name="" id="end-phone"> -->
+            </div>
+            <!-- <input type="text" name="" id="end-phone"> -->
+        </div>
+        
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+
+<footer></footer>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+    
+    <section class="silver-background">
+        
+
+        <div class="interface">
+              
+            
+            <div id="calculator">
+                <input id="display" readonly>
+            <br>
+            <br> 
+            <div id="clock-div"><input type="text"id="clock"></div> 
+                <div class="icons">
+                    <div id="clock-div"><input type="text"id="clock"></div>
+                    <svg class="wifi" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1.33309 8.07433C0.92156 8.44266 0.886539 9.07485 1.25487 9.48638C1.62319 9.89791 2.25539 9.93293 2.66691 9.5646L1.33309 8.07433ZM21.3331 9.5646C21.7446 9.93293 22.3768 9.89791 22.7451 9.48638C23.1135 9.07485 23.0784 8.44266 22.6669 8.07433L21.3331 9.5646ZM12 19C11.4477 19 11 19.4477 11 20C11 20.5523 11.4477 21 12 21V19ZM12.01 21C12.5623 21 13.01 20.5523 13.01 20C13.01 19.4477 12.5623 19 12.01 19V21ZM14.6905 17.04C15.099 17.4116 15.7315 17.3817 16.1031 16.9732C16.4748 16.5646 16.4448 15.9322 16.0363 15.5605L14.6905 17.04ZM18.0539 13.3403C18.4624 13.7119 19.0949 13.682 19.4665 13.2734C19.8381 12.8649 19.8082 12.2324 19.3997 11.8608L18.0539 13.3403ZM7.96372 15.5605C7.55517 15.9322 7.52524 16.5646 7.89687 16.9732C8.2685 17.3817 8.90095 17.4116 9.3095 17.04L7.96372 15.5605ZM4.60034 11.8608C4.19179 12.2324 4.16185 12.8649 4.53348 13.2734C4.90511 13.682 5.53756 13.7119 5.94611 13.3403L4.60034 11.8608ZM2.66691 9.5646C5.14444 7.34716 8.41371 6 12 6V4C7.90275 4 4.16312 5.54138 1.33309 8.07433L2.66691 9.5646ZM12 6C15.5863 6 18.8556 7.34716 21.3331 9.5646L22.6669 8.07433C19.8369 5.54138 16.0972 4 12 4V6ZM12 21H12.01V19H12V21ZM12 16C13.0367 16 13.9793 16.3931 14.6905 17.04L16.0363 15.5605C14.9713 14.5918 13.5536 14 12 14V16ZM12 11C14.3319 11 16.4546 11.8855 18.0539 13.3403L19.3997 11.8608C17.4466 10.0842 14.8487 9 12 9V11ZM9.3095 17.04C10.0207 16.3931 10.9633 16 12 16V14C10.4464 14 9.02872 14.5918 7.96372 15.5605L9.3095 17.04ZM5.94611 13.3403C7.54544 11.8855 9.66815 11 12 11V9C9.15127 9 6.55344 10.0842 4.60034 11.8608L5.94611 13.3403Z" fill="#fff"></path> </g></svg>
+                    <svg class="battery" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 6.75L3 7.5V16.5L3.75 17.25H18.75L19.5 16.5V14.25H21V9.75H19.5V7.5L18.75 6.75H3.75ZM18 9.75V8.25H4.5V15.75H18V14.25V9.75Z" fill="#fff"></path> </g></svg>
+                    <svg class="connection" viewBox="0 0 76 76" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" enable-background="new 0 0 76.00 76.00" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#fff" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 41,35L 41,57L 35,57L 35,35L 41,35 Z M 33,44L 33,57L 27,57L 27,44L 33,44 Z M 19,57L 19,51L 25,51L 25,57L 19,57 Z M 57,19L 57,57L 51,57L 51,19L 57,19 Z M 49,27L 49,57L 43,57L 43,27L 49,27 Z "></path> </g></svg>
+                </div>
+                 
+           
+                <div id="keys">
+                    
+                    <button  class="operator-btn" onclick="addToDisplay('+')" >+</button>
+                    <button  class="numbers" onclick="addToDisplay('7')">7</button>
+                    <button  class="numbers" onclick="addToDisplay('8')">8</button>
+                    <button  class="numbers" onclick="addToDisplay('9')">9</button>
+                    <button  class="operator-btn" onclick="addToDisplay('-')" >-</button>
+                    <button  class="numbers" onclick="addToDisplay('4')">4</button>
+                    <button  class="numbers" onclick="addToDisplay('5')">5</button>
+                    <button  class="numbers" onclick="addToDisplay('6')">6</button>
+                    <button  class="operator-btn" onclick="addToDisplay('*')" >*</button>
+                    <button  class="numbers" onclick="addToDisplay('1')">1</button>
+                    <button  class="numbers" onclick="addToDisplay('2')">2</button>
+                    <button  class="numbers" onclick="addToDisplay('3')">3</button>
+                    <button  class="operator-btn"  onclick="addToDisplay('/')">/</button>
+                    <button  class="numbers" onclick="addToDisplay('0')">0</button>
+                    <button  onclick="addToDisplay('.')">.</button>
+                    <button id="equal" onclick="calculate()">=</button>
+                    <button  class="operator-btn" onclick="clearDisplay()">C</button>
+                    <input type="text" name="" id="end-phone">
+                </div>
+                
+                <input type="text" name="" id="end-phone">
+            </div>
+            <!-- <input type="text" name="" id="end-phone"> -->
+        <!-- </div>
+        
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+
+<footer></footer>
+</html>  -->

@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+    
+    
+}
+#calculator{
+   
+    font-family: Arial, sans-serif;
+    /* background-color: hsl(0, 0%, 15%); */
+    border-radius: 15px;
+    max-width: 400px;
+    height: 675px;
+    overflow: hidden;
+    margin: 10px;
+    margin-top: 30px;
+    margin-top: 30px;
+    
+    
+}
+#display{
+    width: 900%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: black;
+    /* background-color: hsl(0, 0%, 20%); */
+    color: white;
+    
+    
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+    
+}
+
+button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+button:active{
+    background-color:  hsl(0, 0%, 50%);
+}
+.operator-btn{
+    background-color: hsl(35, 100%, 55%);
+}
+.operator-btn:hover{
+    background-color: hsl(35, 100%, 65%);
+}
+.operator-btn:active{
+    background-color: hsl(35, 100%, 75%);
+}
+.interface{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 400px;
+    border-radius: 50px;
+    
+}
+footer{
+    bottom: 0;
+    align-items: flex-end;
+    margin-top: 1000px;
+}
+.wifi ,.battery ,.connection{
+
+    width: 50px;
+    height: 30px;
+   
+}   
+.icons{
+    display: flex;
+    justify-content: right;
+    /* align-items: ; */
+    margin: 3px;
+    position: calc(-50%,-50%);
+    margin-top:-155px;
+    margin-bottom: 100px;
+}
+.silver-background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(164, 151, 157);
+    width: 400px;
+    padding: 5px;
+    border-radius: 50px;
+
+    /* height: 600; */
+
+}
+#end-phone{
+    position: absolute;  
+    left: 50%;           
+    transform: translateX(-50%);
+    bottom: 100px;       
+    background-color: whitesmoke;
+    height: 5px;
+    width: 150px;
+    border: none;
+    border-radius: 20px; 
+    cursor: pointer;
+}
+/* #cklock{
+    background-color: aqua;
+    /* width: 10px;
+    height: 10px; */
+    
+#clock{
+    width: 40px;
+    
+}
+
+#clock-div{
+  margin-right: 190px;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  margin-top: 5px;
+  
+}
+#clock {
+    width: 50px; 
+    height: 20px; 
+    font-size: 1rem; 
+    border: none;
+    background-color: black; 
+    color: white; 
+   
+    text-align: center; 
+    
+    border-radius: 50px; 
+}
